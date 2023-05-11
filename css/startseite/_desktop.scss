@@ -115,16 +115,8 @@
 @keyframes move{
     0% {top: 0px;}
     100% {
-        font-size: 1.9em;
+        scale:105%;
         background-color: rgb(228, 23, 23);
         color: blue;
-    }
-}
-@keyframes balk {
-    0% { top:0px}
-    100%{
-        color: red;
-        font-size: 1.5em;
-
     }
 }

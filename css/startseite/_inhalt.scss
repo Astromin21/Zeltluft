@@ -47,6 +47,8 @@
         flex-wrap: wrap;
         justify-content: center;
         padding: 40px;
+        gap: 10px 10%;
+        
         img{
             width: 300px;
             min-height: 100px;
@@ -54,11 +56,5 @@
     }
 }
 
-@keyframes balk {
-    0% { top:0px}
-    100%{
-        background-color: red;
-    }
-}
 
 

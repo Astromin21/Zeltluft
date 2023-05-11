@@ -91,6 +91,30 @@
                 margin-right: auto;
             }
         }
+        .team {
+            padding: 20px;
+            max-width: 80vw;
+            min-width: 60vw;
+            gap: 20px;
+            .info{
+                max-width: 60vw;
+                max-height: fit-content;
+                grid-template-areas: 
+                "na txt"
+                "pic txt";
+                grid-template-columns: 1fr 4fr;
+                grid-template-rows: 50px 220px;
+
+                .name {
+                    max-height: 50px;
+                }
+                .text {
+                    text-align: center;
+                    max-width: 80vw;
+                }
+            }
+        }
+    
     }
 }
 @keyframes move{
