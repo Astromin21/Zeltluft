@@ -1,0 +1,75 @@
+.container {
+    width: 100vw;
+    .anfang {
+        .back {
+            height: calc(100vh - 100px);
+            width: 100vw;
+        }
+        .balken {
+            background-color: rgba(74, 74, 221, 0.719);
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            top:80vh;
+            text-justify: center;
+            text-align: center;
+
+    
+            .beschreibung {
+                color: white;
+                margin: 5px;
+                font-size: 1.9em;
+            }
+        }
+    }
+    .produkte {
+        width: 100%;
+        margin-top: -5px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        background-color: $contentbackgroundcolor;
+        .raster {
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            justify-items: center;
+            align-content: start;
+            background-color: white;
+            padding: 20px;
+            .bild {
+                max-width: 300px;
+                min-width: 100px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .text {
+                width: 100%;
+                padding-top: 10px;
+                text-align: center;
+
+                .ue {
+                    font-size: 2rem;
+                    color: $h1contentcolor;
+                }
+                
+                .liste {
+                    list-style:disc;
+                    justify-items: left;
+                    padding-top: 20px;
+                    padding-left: 20px;
+                    margin: 0;
+                    color: $pcontentcolor;
+                    font-size: 1.3rem;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.kopf {
+    height: 100px;
+    width: 100vw;
+    background-color: $backgroundcolor;
+    border-bottom: 10px groove grey;
+
+    /*mobile styling---------------------------------------------------------------------*/
+    .nav_top {
+        height: 100vh;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 999;
+        
+
+        .logo_kl {
+            float: left;
+            margin: 10px;
+            margin-top: 0;
+
+            img {
+                width: 100%;
+                height: 80px;
+            }
+        }
+        .logo_gr {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            img {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        /* Hamburger---------------------------------------------------------------------*/
+        #nav-top-trigger {
+            display: none;
+
+            &:checked {
+                ~ .nav-top-trigger {
+                    em {
+                        background-color: transparent;
+                        transition: background-color 0.5s;
+                        &::before {
+                            transform: rotate(-135deg);
+                            transition: transform 0.5s;
+                            background-color: black;
+                        }
+
+                        &::after {
+                            transform: rotate(135deg);
+                            transition: transform 0.5s;
+                            background-color: black;
+                        }
+                    }
+                }
+            
+
+                ~ .menu {
+                    opacity: 1;
+                    pointer-events: auto;
+                    transition: opacity 0.5s;
+                }
+                #nav-top-trigger {
+                    display: none;
+        
+                    &:checked {
+                        ~.nav-top-trigger {
+                            em {
+                                background-color: transparent;
+                                transition: background-color 0.5s;
+            
+                                &::before {
+                                    transform: rotate(-135deg);
+                                    transition: transform 0.5s;
+                                    background-color: black;
+                                }
+            
+                                &::after {
+                                    transform: rotate(135deg);
+                                    transition: transform 0.5s;
+                                    background-color: black;
+                                }
+                            }
+        
+                        }
+        
+                    }
+                    
+                    ~.menu {
+                        opacity: 1;
+                        pointer-events: auto;
+                        transition: opacity 0.5s;
+                    }  
+                }
+            }
+        }
+
+        .nav-top-trigger {
+            float: right;
+            height: 80px;
+
+            em {
+                display: block;
+                width: 28px;
+                height: 2px;
+                background-color: white;
+                margin: 38px 10px;
+                position: relative;
+                transition: background-color 0.5s;
+
+                &::before,
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 28px;
+                    height: 2px;
+                    background-color: white;
+                    position: absolute;
+                    left: 0;
+                    transition: transform 0.5s;
+                }
+
+                &::before {
+                    transform: translateY(8px);
+
+                }
+
+                &::after {
+                    transform: translateY(-8px);
+
+                }
+            }
+        }
+
+
+        /* menüpunkte----------------------------------------------------------------------*/
+
+        .menu {
+            background-color: rgba(255, 255, 255, 0.897);
+            margin: 1.5em;
+            padding-left: 1em;
+            padding-right: 1em;
+            height: 70%;
+            max-height: calc(100vh - 110px);
+            margin-top: 20px;
+            display: grid;
+            grid-template-rows: repeat(4, 25%);
+            list-style: none;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            overflow-y: auto;
+
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s;
+
+            z-index: 900;
+            .platzhalter {
+                display: none;
+            }
+
+            li {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 1px solid rgb(202, 202, 202);
+                height: 100%;
+                justify-content: center;
+                align-items: stretch;
+
+
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: blue;
+                    font-size: 1.7em;
+
+                    &:hover {
+                        background-color: rgb(199, 22, 22);
+                        color: white;
+                    }
+                
+                }
+                img {
+                    max-width: 100%;
+                    max-height: 70%;
+                    justify-self: center;
+                }
+            }
+
+            .ohne {
+                border-style: none;
+            }
+
+        }
+    }
+}

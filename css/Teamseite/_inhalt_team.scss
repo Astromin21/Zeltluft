@@ -1,0 +1,70 @@
+.container {
+    text-align: center;
+    .anfang {
+        .back {
+            height: calc(100vh - 100px);
+            width: 100vw;
+        }
+        .balken {
+            background-color: rgba(74, 74, 221, 0.719);
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            top:80vh;
+            text-justify: center;
+            text-align: center;
+
+    
+            .beschreibung {
+                color: white;
+                margin: 5px;
+                font-size: 1.9em;
+            }
+        }
+    }
+    .team {
+        padding-top: 35px;
+        text-align: start;
+        width: 80%;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+        .info {
+            display: grid;
+            grid-template-areas: 
+            "pic na na"
+            "txt txt txt";
+            grid-template-rows: 3fr 7fr;
+            grid-template-columns: 5fr 2fr 2fr;
+            min-width: 200px;
+            max-width: 300px;
+            flex-wrap: wrap;
+            border: 1px solid grey;
+            .bild {
+                width: 100%;
+                height:100%;
+                grid-area: pic;
+                padding-right: 0px;
+            }
+            .name {
+                grid-area: na;
+                background-color: $backgroundcolor;
+                padding-left: 0px;
+                text-align: center;
+                padding-top: 20px;
+            }
+            .text {
+                grid-area: txt;
+                max-width: 500px;
+                background: $contentbackgroundcolor;
+                font-size: 1.3em;
+                padding: 20px;
+            }
+        }
+    }
+}

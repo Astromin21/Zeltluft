@@ -1,0 +1,103 @@
+@media only screen and (min-width: 992px) {
+    .kopf {
+        .nav_top {
+            width: 100vw;
+            height: 100px;
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+
+            .nav-top-trigger {
+                display: none;
+            }
+            .logo_kl {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                margin: 0;
+
+            }
+            .logo_gr {
+                grid-column: 1;
+                opacity: 1;
+                width: 100px;
+                height: 100px;
+
+                img {
+                    width: 20vw;
+                    max-width: 450px;
+                    height: 80px;
+                }
+            }
+
+            .menu {
+                margin: 0;
+                grid-column: 2;
+                justify-self: end;
+                width: 500px;
+                background-color: transparent;
+                display: flex;
+                opacity: 1;
+                line-height: 80px;
+                background-color: transparent;
+                overflow: visible;
+                pointer-events: auto;
+                position: relative;
+                top: 0;
+                line-height: 90px;
+
+
+
+                >li {
+                    float: left;
+                    border-bottom: none;
+                    height: 80px;
+                    position: relative;
+                    padding-left: 10px;
+
+
+                    a {
+                        color: white;
+
+                        &:hover {
+                            animation: move 1s forwards;
+                        }
+                    }
+                }
+
+                .platzhalter {
+                    display: flex;
+                    color: white;
+                }
+
+            }
+        }
+    }
+    .container {
+        width: 100vw;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .anfang {
+
+            .back {
+                height: calc(100vh - 100px);
+                width: 100%;
+            }
+            .balken {
+                width: 100vw;
+                max-width: 1500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+@keyframes move{
+    0% {top: 0px;}
+    100% {
+        font-size: 1.9em;
+        background-color: rgb(228, 23, 23);
+        color: blue;
+    }
+}

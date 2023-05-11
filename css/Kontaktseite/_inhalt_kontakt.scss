@@ -1,0 +1,79 @@
+.container {
+    width: 100vw;
+
+    .anfang {
+        .back {
+            height: calc(100vh - 100px);
+            width: 100vw;
+        }
+
+        .balken {
+            background-color: rgba(74, 74, 221, 0.719);
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            top: 80vh;
+            text-justify: center;
+            text-align: center;
+
+
+            .beschreibung {
+                color: white;
+                margin: 5px;
+                font-size: 1.9em;
+            }
+        }
+    }
+
+    .contact {
+        width: 100vw;
+        text-align: center;
+        .daten {
+            padding: 15px;
+            .email {
+                text-decoration: underline;
+                color: blue;
+            }
+            .ue {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            .text {
+                font-size: 1.5em;
+                margin-bottom: 40px;
+            }
+            .time {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                .liste {
+                    list-style: none;
+                    padding: 0;
+                    font-size: 1.25em;
+                }
+                .tage {
+                    justify-self: center;
+                    li {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .google {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80vw;
+            min-height: 350px;
+            padding: 10px;
+        }
+
+
+        .form {
+            display: none;
+        }
+    }
+}

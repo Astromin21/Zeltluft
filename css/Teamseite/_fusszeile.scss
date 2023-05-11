@@ -1,0 +1,47 @@
+.fuss {
+    height: 200px;
+    background-color: $backgroundfusscolor;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+
+    color: $textfusscolor;
+    font-size:1.5em;
+    .link{
+        grid-row: 1;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 10px;
+        
+        a{
+            text-decoration: none;
+            color: $textfusscolor;
+
+            &:hover {
+                color: blue;
+
+            }
+        }
+        
+    }
+
+    .social {
+        grid-row: 2;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+    
+    }
+    .logo_fuss {
+        grid-row: 3;
+        justify-self: center;
+
+        img {
+            width: 15vw;
+            max-width: 100px;
+            height: auto;
+        }
+    }
+}

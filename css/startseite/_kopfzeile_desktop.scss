@@ -1,0 +1,53 @@
+@media only screen and (min-width: 992px) {
+    .kopf{
+        background-color: green;
+
+        .nav-top {
+            background-color: blue;
+
+            .nav-top-trigger{
+                display: none;
+            }
+            .logo_kl{
+                opacity: 0;
+                img {
+                    opacity: 0;
+                }
+            }
+            
+
+            .menu {
+                display: flex;
+                list-style: none;
+                font-size: 1.5em;
+                gap: 2em;
+                padding: 10px;
+                place-content: flex-end;
+                opacity: 1;
+                overflow-y: auto;
+
+
+                li {
+
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        color: $textcolormenuemob;
+
+                        &:hover {
+                            background-color: rgb(199, 22, 22);
+                            color: blue;
+                        }
+                    }
+                    img {
+                        opacity: 1;
+                        
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+}
